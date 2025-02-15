@@ -13,7 +13,7 @@ export default function EventDetails() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-5xl font-extrabold text-transparent bg-gradient-to-r from-gray-900 via-event-orange to-red-500 bg-clip-text drop-shadow-md mb-12"
+          className="text-4xl sm:text-5xl font-extrabold text-transparent bg-gradient-to-r from-black to-gray-700 bg-clip-text drop-shadow-lg mb-12"
         >
           Event Details
         </motion.h2>
@@ -22,23 +22,23 @@ export default function EventDetails() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
           {[
             {
-              icon: <FaMapMarkerAlt className="text-event-orange text-2xl sm:text-3xl" />,
+              icon: <FaMapMarkerAlt className="text-gray-800 text-2xl sm:text-3xl" />,
               title: "Venue",
               details: "Yamaha Theatre, Sandton",
               subDetails: "19 Eastern Service Rd, Kelvin, Sandton, 2054",
             },
             {
-              icon: <FaCalendarAlt className="text-red-500 text-2xl sm:text-3xl" />, // 🔴 Calendar icon now red
+              icon: <FaCalendarAlt className="text-gray-800 text-2xl sm:text-3xl" />,
               title: "Date",
               details: "28 February 2025",
             },
             {
-              icon: <FaClock className="text-blue-500 text-2xl sm:text-3xl" />, // 🔵 Time icon now blue
+              icon: <FaClock className="text-gray-800 text-2xl sm:text-3xl" />,
               title: "Time",
               details: "09:00 – 17:00",
             },
             {
-              icon: <FaTicketAlt className="text-green-500 text-2xl sm:text-3xl" />,
+              icon: <FaTicketAlt className="text-gray-800 text-2xl sm:text-3xl" />,
               title: "Tickets",
               details: "FREE on Quicket",
             },
@@ -48,9 +48,9 @@ export default function EventDetails() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex items-center bg-gray-100 p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition-transform hover:-translate-y-1"
+              className="flex items-center bg-gray-50 p-5 rounded-xl shadow-md border border-gray-300 hover:shadow-lg hover:border-gray-500 transition-transform hover:-translate-y-1"
             >
-              <div className="mr-4 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gray-200 rounded-full">
+              <div className="mr-4 flex items-center justify-center w-12 h-12 bg-gray-200 rounded-full hover:bg-gray-800 hover:text-white transition">
                 {item.icon}
               </div>
               <div className="text-left">
@@ -73,7 +73,7 @@ export default function EventDetails() {
             href="https://www.quicket.co.za/events/301842-music-tech-conference-and-live-music-showcases/#/"
             target="_blank"
           >
-            <button className="px-10 py-5 bg-event-orange hover:bg-orange-600 text-white text-lg font-bold rounded-lg shadow-md transition">
+            <button className="px-10 py-5 bg-black hover:bg-gray-800 text-white text-lg font-bold rounded-lg shadow-md transition">
               Get Free Tickets
             </button>
           </Link>

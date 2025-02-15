@@ -13,7 +13,7 @@ export default function Expectations() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-5xl font-extrabold text-transparent bg-gradient-to-r from-white via-event-orange to-red-500 bg-clip-text drop-shadow-md mb-12"
+          className="text-4xl sm:text-5xl font-extrabold text-transparent bg-gradient-to-r from-white to-gray-400 bg-clip-text drop-shadow-lg mb-12"
         >
           What to Expect?
         </motion.h2>
@@ -22,19 +22,19 @@ export default function Expectations() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
           {[
             {
-              icon: <FaMicrophoneAlt className="text-event-orange text-3xl sm:text-4xl" />,
+              icon: <FaMicrophoneAlt className="text-white text-3xl sm:text-4xl drop-shadow-lg" />,
               title: "Expert-Led Panels & Industry Talks",
               description:
                 "Explore the latest trends in music tech, from AI and streaming to blockchain. Hear insights from top industry experts.",
             },
             {
-              icon: <FaChalkboardTeacher className="text-blue-400 text-3xl sm:text-4xl" />,
+              icon: <FaChalkboardTeacher className="text-white text-3xl sm:text-4xl drop-shadow-lg" />,
               title: "Hands-on Workshops & Keynotes",
               description:
                 "Get hands-on with music distribution, smart contracts, and NFTs. Learn how legal and business aspects shape the digital music era.",
             },
             {
-              icon: <FaMusic className="text-green-400 text-3xl sm:text-4xl" />,
+              icon: <FaMusic className="text-white text-3xl sm:text-4xl drop-shadow-lg" />,
               title: "Live Performances & Showcases",
               description:
                 "Experience live performances and tech-driven showcases that highlight the future of music innovation.",
@@ -45,7 +45,7 @@ export default function Expectations() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col bg-gray-800 p-6 rounded-xl shadow-md border border-gray-700 hover:shadow-lg transition-transform hover:-translate-y-1"
+              className="flex flex-col bg-gray-800 p-6 rounded-xl shadow-md border border-gray-600 hover:border-gray-400 hover:shadow-xl transition-transform hover:-translate-y-1"
             >
               <div className="flex items-center justify-center w-14 h-14 bg-gray-700 rounded-full mb-4">
                 {item.icon}
@@ -67,7 +67,7 @@ export default function Expectations() {
             href="https://www.quicket.co.za/events/301842-music-tech-conference-and-live-music-showcases/#/"
             target="_blank"
           >
-            <button className="px-10 py-5 bg-event-orange hover:bg-orange-600 text-white text-lg font-bold rounded-lg shadow-md transition">
+            <button className="px-10 py-5 bg-black hover:bg-gray-800 text-white text-lg font-bold rounded-lg shadow-md transition">
               Reserve Your Free Ticket
             </button>
           </Link>

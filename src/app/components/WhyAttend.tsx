@@ -10,21 +10,21 @@ const reasons = [
     description:
       "Spotify, Apple Music, YouTube, and TikTok are tech giants, not record labels. AI, blockchain, and digital tools are transforming music creation and distribution.",
     icon: <FaRocket className="text-blue-600 text-4xl" />,
-    bgColor: "bg-blue-100",
+    bgColor: "bg-blue-200",
   },
   {
     title: "South Africa Needs to Keep Up",
     description:
       "The global music industry is moving fast – AI-generated music, smart contracts, and NFTs are here. South African creatives must adapt to stay competitive.",
     icon: <FaGlobeAfrica className="text-orange-600 text-4xl" />,
-    bgColor: "bg-orange-100",
+    bgColor: "bg-orange-200",
   },
   {
     title: "Meet Experts, Learn, and Network",
     description:
       "Designed for artists, managers, booking agents, and professionals. Connect with industry leaders, legal experts, and music-tech pioneers.",
     icon: <FaHandshake className="text-green-600 text-4xl" />,
-    bgColor: "bg-green-100",
+    bgColor: "bg-green-200",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function WhyAttend() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-black via-event-orange to-red-500 bg-clip-text drop-shadow-md mb-12"
+          className="text-4xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-black to-gray-600 bg-clip-text drop-shadow-lg mb-12"
         >
           Why This Event Matters
         </motion.h2>
@@ -50,7 +50,7 @@ export default function WhyAttend() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition flex flex-col items-center text-center"
+              className="bg-gray-100 p-6 rounded-lg shadow-md border border-gray-300 hover:scale-105 hover:shadow-lg transition-transform flex flex-col items-center text-center"
             >
               <div className={`w-16 h-16 ${reason.bgColor} flex items-center justify-center rounded-full mb-4`}>
                 {reason.icon}
@@ -69,7 +69,7 @@ export default function WhyAttend() {
           className="mt-10"
         >
           <Link href="https://www.quicket.co.za/events/301842-music-tech-conference-and-live-music-showcases/#/" target="_blank">
-            <button className="px-8 py-4 bg-event-orange hover:bg-orange-600 text-white text-lg font-bold rounded-lg shadow-md transition">
+            <button className="px-8 py-4 bg-black hover:bg-gray-900 text-white text-lg font-bold rounded-lg shadow-md transition">
               Register Now for Free
             </button>
           </Link>

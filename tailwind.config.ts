@@ -10,26 +10,35 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary Theme Colors
-        "event-orange": "#FF4500", // Electric Orange (Main Theme Color)
-        "event-black": "#111111", // Deep Black (For Backgrounds)
-        "event-white": "#FFFFFF", // Clean White (For Text & Contrast)
+        // **Core Theme Colors**
+        "event-black": "#0D0D0D", // Deep Black (Background)
+        "event-white": "#F5F5F5", // Soft Off-White (Text & Contrast)
+        "event-gray": "#1C1C1C", // Dark Gray (Cards & Sections)
+        "event-border": "#2A2A2A", // Subtle Border Color
 
-        // Secondary & Accent Colors
-        "dark-gray": "#222222", // Slightly lighter than black
-        "light-gray": "#EAEAEA", // Soft Gray for Borders
+        // **Accent Colors**
+        "event-silver": "#CCCCCC", // Light Silver (Minimal Highlights)
+        "event-glow": "#FFFFFF", // Pure White Glow for Effects
       },
+
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(0,0,0,1) 100%)",
+      },
+
       animation: {
-        "pulse-glow": "pulse-glow 1.5s ease-in-out infinite",
+        "subtle-pulse": "subtle-pulse 1.8s infinite ease-in-out",
       },
+
       keyframes: {
-        "pulse-glow": {
-          "0%, 100%": { opacity: "1", filter: "drop-shadow(0 0 5px #FF4500)" },
-          "50%": { opacity: "0.8", filter: "drop-shadow(0 0 10px #FF4500)" },
+        "subtle-pulse": {
+          "0%, 100%": { opacity: "1", filter: "drop-shadow(0 0 5px rgba(255,255,255,0.2))" },
+          "50%": { opacity: "0.9", filter: "drop-shadow(0 0 10px rgba(255,255,255,0.4))" },
         },
       },
+
       fontFamily: {
-        "event-sans": ["Satoshi", "sans-serif"],
+        "event-sans": ["Inter", "sans-serif"],
+        "event-mono": ["IBM Plex Mono", "monospace"],
       },
     },
   },

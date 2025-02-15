@@ -1,7 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaCalendarAlt, FaMicrophone, FaChalkboardTeacher, FaHandshake, FaMusic } from "react-icons/fa";
+import { 
+  FaCalendarAlt, 
+  FaMicrophone, 
+  FaChalkboardTeacher, 
+  FaHandshake, 
+  FaMusic 
+} from "react-icons/fa";
 
 const schedule = [
   {
@@ -46,17 +52,17 @@ export default function EventSchedule() {
   return (
     <section id="schedule" className="bg-gradient-to-b from-gray-50 to-white py-16 px-6 text-center">
       <div className="max-w-5xl mx-auto">
-        {/* Section Header */}
+        {/* 🔥 Enhanced Header */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-extrabold text-gray-900 drop-shadow-md mb-10"
+          className="text-4xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-black to-gray-600 bg-clip-text drop-shadow-md mb-10"
         >
-          📅 Event Schedule
+         Event Schedule
         </motion.h2>
 
-        {/* Schedule Grid */}
+        {/* 📝 Schedule Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {schedule.map((item, index) => (
             <motion.div
@@ -66,9 +72,14 @@ export default function EventSchedule() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="flex items-center bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition"
             >
-              <div className={`w-14 h-14 ${item.bgColor} flex items-center justify-center rounded-full`}>
+              {/* 🎨 Icon with Hover Animation */}
+              <motion.div
+                className={`w-14 h-14 ${item.bgColor} flex items-center justify-center rounded-full`}
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ duration: 0.3 }}
+              >
                 {item.icon}
-              </div>
+              </motion.div>
               <div className="ml-4 text-left">
                 <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
                 <p className="text-gray-600 font-medium">{item.time}</p>
@@ -76,16 +87,6 @@ export default function EventSchedule() {
             </motion.div>
           ))}
         </div>
-
-        {/* Call-to-Action Button */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="mt-10"
-        >
-          
-        </motion.div>
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ const CountdownTimer = () => {
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
-            className="flex flex-col items-center p-4 w-24 sm:w-28 rounded-lg bg-black shadow-lg border border-gray-700"
+            className="flex flex-col items-center p-4 w-22 sm:w-26 rounded-lg bg-black shadow-lg border border-gray-700"
           >
             <motion.span
               key={item.value} // Ensures reanimation on update

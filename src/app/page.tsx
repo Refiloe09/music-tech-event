@@ -5,10 +5,11 @@ import Hero from "./components/HeroSection";
 import CountdownTimer from "./components/CountdownTimer"; // New Countdown Timer
 import EventDetails from "./components/EventDetails";
 import Expectations from "./components/Expectations";
-import Topics from "./components/Topics";
+import Speakers from "./components/Speakers";
 import WhyAttend from "./components/WhyAttend";
 import EventSchedule from "./components/EventSchedule";
 import Footer from "./components/Footer";
+import CallForArtists from "./components/CallForArtists";
 // import FAQ from "./components/FAQ"; // Added FAQ Section
 
 export default function Home() {
@@ -25,8 +26,9 @@ export default function Home() {
         <CountdownTimer /> 
         <EventDetails />
         <Expectations />
-        <Topics />
         <WhyAttend />
+        <CallForArtists />
+        <Speakers />
         <EventSchedule />
         <Footer />
         {/* <FAQ /> */}

@@ -48,14 +48,14 @@ const speakers = [
 
 export default function Speakers() {
   return (
-    <section className="bg-gray-900 py-16 px-6 text-white text-center">
+    <section className=" py-16 px-6 text-white text-center">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-extrabold text-neon-cyan mb-8"
+          className="text-4xl md:text-5xl font-extrabold text-black mb-8"
         >
           Featured Speakers & Sessions
         </motion.h2>

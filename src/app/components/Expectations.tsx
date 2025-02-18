@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Expectations() {
   return (
-    <section className="bg-gray-900 py-16 px-6 text-center">
+    <section className="bg-event-black py-16 px-6 text-center">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <motion.h2
@@ -45,13 +45,13 @@ export default function Expectations() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col bg-gray-800 p-6 rounded-xl shadow-md border border-gray-600 hover:border-gray-400 hover:shadow-xl transition-transform hover:-translate-y-1"
+              className="flex flex-col bg-event-white p-6 rounded-xl shadow-md border border-gray-600 hover:border-gray-400 hover:shadow-xl transition-transform hover:-translate-y-1"
             >
-              <div className="flex items-center justify-center w-14 h-14 bg-gray-700 rounded-full mb-4">
+              <div className="flex items-center justify-center w-14 h-14 bg-event-black rounded-full mb-4">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-              <p className="text-gray-300 mt-2">{item.description}</p>
+              <h3 className="text-xl font-semibold text-black">{item.title}</h3>
+              <p className="text-black mt-2">{item.description}</p>
             </motion.div>
           ))}
         </div>
@@ -67,7 +67,7 @@ export default function Expectations() {
             href="https://www.quicket.co.za/events/301842-music-tech-conference-and-live-music-showcases/#/"
             target="_blank"
           >
-            <button className="px-10 py-5 bg-black hover:bg-gray-800 text-white text-lg font-bold rounded-lg shadow-md transition">
+            <button className="px-10 py-5 bg-event-glow hover:bg-event-silver text-event-black text-lg font-bold rounded-lg shadow-md transition">
               Reserve Your Free Ticket
             </button>
           </Link>

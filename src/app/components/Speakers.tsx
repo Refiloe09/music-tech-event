@@ -40,11 +40,6 @@ const speakers = [
     image: "/speakers/Dumisani Motsamai.jpg",
   },
   {
-    name: "Collen Dlamini",
-    topic: "Legal Panel - Regulatory Elements in Music Business & Tech",
-    image: "/speakers/missing_photo.webp",
-  },
-  {
     name: "Renneth Tshisikule",
     topic: "Case Study: Moving from Paper-Based to Online Application, and Export Opportunities",
     image: "/speakers/Renneth - Imexsa.JPG",
